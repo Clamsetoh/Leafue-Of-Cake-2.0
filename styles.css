@@ -1,0 +1,178 @@
+body {
+
+    font-family: 'Archivo', sans-serif;
+
+    background: #6a216a;
+
+    margin: 0px;
+}
+
+.contenido {
+    padding-bottom: 50px;
+    /* este valor debe ser igual o mayor al alto del pie */
+}
+
+#pie {
+    height: 50px;
+    line-height: 30px;
+    color: #a677a5;
+    text-align: Left;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+ul li a {
+    color: #a5a5a5;
+}
+
+nav ul li {
+    color: #494949;
+}
+
+header {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.parrafo {
+    grid-column: 1;
+    grid-row: 1/7;
+    margin: 50px 10px 10px 30px;
+
+}
+
+h1 {
+    font-size: bolder;
+    color: #b3b3b3;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+h2 {
+    background-color: #993399;
+    margin: 40px 10px 10px 0px;
+    text-align: left;
+    color: #fff6fd;
+    font-size: xx-large;
+    width: 100%;
+    border: 20px solid #993399;
+}
+
+.contenido {
+    margin: 40px 10px 10px 0px;
+    text-align: left;
+    font-size: x-large;
+    color: #b695b8;
+}
+
+.listado {
+    color: #ababab;
+    margin: 20px 10px 10px 0px;
+    text-align: left;
+    font-size: larger;
+
+}
+
+img {
+    grid-column: 2;
+    grid-row: 1/7;
+    margin: 110px 10px 10px 100px;
+    height: 60%;
+    width: 60%;
+}
+
+.extraColor {
+    color: #8f8f8f;
+}
+
+.contenedor {
+    width: 350px;
+    height: 70px;
+    background-image: url('public/img/Logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px 10px 10px 10px;
+}
+
+body {
+    margin: 8;
+}
+
+
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+    body {
+        background-color: #6a216a;
+        width: 100%;
+        height: 10vh;
+        font-size: small;
+    }
+    .navbar{
+        width: 90%;
+        margin: 25px ;
+    }
+    header{
+        width: 100%;
+    }
+    .contenedor{
+        width: 80%;
+        height: 80%;
+    }
+    img{
+        margin: 100px 0px 0px 40px;
+        width: 85%;
+        height: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 900px) and (max-width:1440px) {
+    body {
+        background-color: #6a216a;
+        width: 100%;
+        height: 10vh;
+    }
+    .contenedor{
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+    }
+    
+    header{
+        width: 100%;
+        height: 140%;
+    }
+    .navbar{
+        font-size:x-large;
+        display: flex;
+        margin: 40px 30px 0px 0px;
+    }
+
+    img{
+        margin: 100px 0px 0px 40px;
+        width: 75%;
+        height: 60%;
+    }
+}
